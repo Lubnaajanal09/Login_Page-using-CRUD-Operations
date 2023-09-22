@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>
+       login.com
+    </title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+	<h1><center>LOGIN CREDENTIAL</center></h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();" autocomplete="off">
+                    <div>
+                        <label>Email Id</label><label class="validation-error hide" id="fullNameValidationError">This field is required.</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div>
+                        <label>Password</label>
+                        <input type="password" name="password" id="password">
+                    </div>
+                    <!-- <div>
+                        <label>Salary</label>
+                        <input type="text" name="salary" id="salary">
+                    </div>
+                    <div>
+                        <label>City</label>
+                        <input type="text" name="city" id="city">
+                    </div> -->
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+		<br/>
+		<div class = "employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Password</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+<!-- <input type="text" name="fullName" id="fullName">
+<input type="text" name="email" id="email">
+<input type="text" name="salary" id="salary">
+<input type="text" name="city" id="city"> -->
